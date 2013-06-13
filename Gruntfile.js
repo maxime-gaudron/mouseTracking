@@ -22,7 +22,12 @@ module.exports = function (grunt) {
     yeoman: yeomanConfig,
     develop: {
       server: {
-        file: '<%= yeoman.app %>/../.tmp/server/app.js'
+        file: '<%= yeoman.app %>/../.tmp/tracking/server/app.js',
+        tasks: ['develop:server']
+      },
+      reporting: {
+        file: '<%= yeoman.app %>/../.tmp/reporting/app.js',
+        tasks: ['coffee:reporting']
       }
     },
     watch: {
@@ -30,9 +35,17 @@ module.exports = function (grunt) {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
         tasks: ['coffee:dist']
       },
-      coffeeServer: {
-        files: ['<%= yeoman.app %>/server/{,*/}*.coffee'],
+      coffeeReporting: {
+        files: ['<%= yeoman.app %>/../reporting/{,*/}*.coffee'],
+        tasks: ['coffee:reporting']
+      },
+      coffeeTrackingServer: {
+        files: ['<%= yeoman.app %>/../tracking/server/{,*/}*.coffee'],
         tasks: ['coffee:server']
+      },
+      coffeeTrackingClient: {
+        files: ['<%= yeoman.app %>/../tracking/client/{,*/}*.coffee'],
+        tasks: ['coffee:client']
       },
       coffeeTest: {
         files: ['test/spec/{,*/}*.coffee'],
@@ -56,7 +69,7 @@ module.exports = function (grunt) {
       options: {
         port: 9010,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost'
+        hostname: '0.0.0.0'
       },
       livereload: {
         options: {
@@ -124,12 +137,30 @@ module.exports = function (grunt) {
         }]
       },
       server: {
+            files: [{
+                expand: true,
+                cwd: '<%= yeoman.app %>/../tracking/server',
+                src: '{,*/}*.coffee',
+                dest: '.tmp/tracking/server',
+                ext: '.js'
+            }]
+        },
+      reporting: {
+            files: [{
+                expand: true,
+                cwd: '<%= yeoman.app %>/../reporting',
+                src: '{,*/}*.coffee',
+                dest: '.tmp/reporting',
+                ext: '.js'
+            }]
+        },
+      client: {
         files: [{
            expand: true,
-           cwd: '<%= yeoman.app %>/server',
-           src: '{,*/}*.coffee',
-           dest: '.tmp/server',
-           ext: '.js'
+             cwd: '<%= yeoman.app %>/../tracking/client',
+             src: '{,*/}*.coffee',
+             dest: '.tmp/tracking/client',
+             ext: '.js'
         }]
       },
       test: {
@@ -283,12 +314,15 @@ module.exports = function (grunt) {
   grunt.registerTask('server', [
     'clean:server',
     'coffee:dist',
+    'coffee:client',
     'coffee:server',
+    'coffee:reporting',
+    'develop:server',
+    'develop:reporting',
     'compass:server',
     'livereload-start',
     'connect:livereload',
     'open',
-    'develop',
     'watch'
   ]);
 

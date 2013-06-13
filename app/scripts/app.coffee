@@ -6,6 +6,9 @@ angular.module('MouseTrackingApp', [])
       .when '/',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
+      .when '/heatmap',
+        templateUrl: 'views/partials/heatmap.html'
+        controller: 'HeatMapCtrl'
       .otherwise
         redirectTo: '/'
   ]
