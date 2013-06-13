@@ -2,9 +2,6 @@
     Url: <input type="text" ng-model="data.url"/>
     <button ng-click="showHeatMap(data)">Show</button>
 </div>
-
-<div id="wrapper" style="position:relative;width: 100%">
-    <iframe src="http://localhost:9010/dummy.html"  id="iframe" style="position:absolute;width:100%;height:1000px;z-index:1;border: 1px solid green;"></iframe>
-    <div id="heatmap" style="height:1000px;z-index:1000;border:1px dashed black;"></div>
-</div>
+    <iframe id="iframe" class="heatmap" src="http://localhost:9010/dummy.html"></iframe>
+    <div class="heatmap" id="heatmap"></div>
 
