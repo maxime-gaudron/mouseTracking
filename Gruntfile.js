@@ -22,30 +22,18 @@ module.exports = function (grunt) {
     yeoman: yeomanConfig,
     develop: {
       server: {
-        file: '<%= yeoman.app %>/../.tmp/tracking/server/app.js',
+        file: '<%= yeoman.app %>/../.tmp/server/app.js',
         tasks: ['develop:server']
-      },
-      reporting: {
-        file: '<%= yeoman.app %>/../.tmp/reporting/app.js',
-        tasks: ['coffee:reporting']
       }
     },
     watch: {
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
-        tasks: ['coffee:dist']
-      },
-      coffeeReporting: {
-        files: ['<%= yeoman.app %>/../reporting/{,*/}*.coffee'],
-        tasks: ['coffee:reporting']
-      },
-      coffeeTrackingServer: {
-        files: ['<%= yeoman.app %>/../tracking/server/{,*/}*.coffee'],
-        tasks: ['coffee:server']
-      },
-      coffeeTrackingClient: {
-        files: ['<%= yeoman.app %>/../tracking/client/{,*/}*.coffee'],
         tasks: ['coffee:client']
+      },
+      coffeeServer: {
+        files: ['<%= yeoman.app %>/../server/{,*/}*.coffee'],
+        tasks: ['coffee:server']
       },
       coffeeTest: {
         files: ['test/spec/{,*/}*.coffee'],
@@ -127,7 +115,7 @@ module.exports = function (grunt) {
       }
     },
     coffee: {
-      dist: {
+      client: {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/scripts',
@@ -139,30 +127,12 @@ module.exports = function (grunt) {
       server: {
             files: [{
                 expand: true,
-                cwd: '<%= yeoman.app %>/../tracking/server',
+                cwd: '<%= yeoman.app %>/../server',
                 src: '{,*/}*.coffee',
-                dest: '.tmp/tracking/server',
+                dest: '.tmp/server',
                 ext: '.js'
             }]
         },
-      reporting: {
-            files: [{
-                expand: true,
-                cwd: '<%= yeoman.app %>/../reporting',
-                src: '{,*/}*.coffee',
-                dest: '.tmp/reporting',
-                ext: '.js'
-            }]
-        },
-      client: {
-        files: [{
-           expand: true,
-             cwd: '<%= yeoman.app %>/../tracking/client',
-             src: '{,*/}*.coffee',
-             dest: '.tmp/tracking/client',
-             ext: '.js'
-        }]
-      },
       test: {
         files: [{
           expand: true,
@@ -313,12 +283,9 @@ module.exports = function (grunt) {
 
   grunt.registerTask('server', [
     'clean:server',
-    'coffee:dist',
     'coffee:client',
     'coffee:server',
-    'coffee:reporting',
     'develop:server',
-    'develop:reporting',
     'compass:server',
     'livereload-start',
     'connect:livereload',

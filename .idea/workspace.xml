@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6b6106e-142d-42c0-9206-bc5686a49da4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/heatmap.html" afterPath="$PROJECT_DIR$/app/views/partials/heatmap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/app.coffee" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reporting/app.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tracking/server/app.coffee" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tracking/client/app.coffee" afterPath="$PROJECT_DIR$/app/scripts/tracking.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/reporting/app.coffee" afterPath="$PROJECT_DIR$/server/reporting/app.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/tracking/app.coffee" afterPath="$PROJECT_DIR$/server/tracking/app.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371135751410" ignored="false" />
+    <file path="/index.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371202996929" ignored="false" />
     <file path="/a.dummy" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371031869923" ignored="false" />
     <file path="$PROJECT_DIR$/../SGFD/Margherita_2013-04-15/frontend/public/themes/margherita/js/module/Query.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1367574209137" ignored="false" />
     <file path="/Query.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1367573667572" ignored="false" />
     <file path="/Dummy.txt" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371126989437" ignored="false" />
-    <file path="/app.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371129024752" ignored="false" />
-    <file path="/Gruntfile.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1370619475225" ignored="false" />
+    <file path="/app.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371203387363" ignored="false" />
+    <file path="/Gruntfile.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371203575582" ignored="false" />
     <file path="/package.json" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1370534040395" ignored="false" />
     <file path="/WebSocketsService.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371113490344" ignored="false" />
     <file path="/main.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1370611937151" ignored="false" />
@@ -70,6 +77,7 @@
     <file path="$PROJECT_DIR$/../SGFD/margherita_2013-06-04/frontend/protected/controllers/PostcodeController.php" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371112358874" ignored="false" />
     <file path="$PROJECT_DIR$/../SGFD/margherita_2013-06-04/frontend/public/themes/woody/js/application/order/createOrder.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371112358874" ignored="false" />
     <file path="/main.scss" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371140190148" ignored="false" />
+    <file path="/app.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371203664387" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,25 +102,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="26" selection-start="1291" selection-end="1291" vertical-scroll-proportion="-11.875">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="0" selection-start="130" selection-end="183" vertical-scroll-proportion="0.2777778">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dummy.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/dummy.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="72" column="31" selection-start="2453" selection-end="2453" vertical-scroll-proportion="-45.0">
+                <state line="27" column="41" selection-start="1306" selection-end="1306" vertical-scroll-proportion="-16.875">
                   <folding />
                 </state>
               </provider>
@@ -121,7 +111,25 @@
           <file leaf-file-name="main.coffee" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="0" selection-start="893" selection-end="893" vertical-scroll-proportion="-12.0">
+                <state line="27" column="0" selection-start="893" selection-end="893" vertical-scroll-proportion="-16.2">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/tracking/app.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="63" selection-start="512" selection-end="512" vertical-scroll-proportion="-12.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1" column="24" selection-start="26" selection-end="26" vertical-scroll-proportion="0.030737706">
                   <folding />
                 </state>
               </provider>
@@ -136,19 +144,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
+          <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Gruntfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="-8.4">
+                <state line="287" column="21" selection-start="6843" selection-end="6843" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/reporting/app.coffee">
+            <entry file="file://$PROJECT_DIR$/server/app.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="15" selection-start="426" selection-end="426" vertical-scroll-proportion="-12.0">
+                <state line="4" column="22" selection-start="139" selection-end="139" vertical-scroll-proportion="-2.4">
                   <folding />
                 </state>
               </provider>
@@ -158,39 +166,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="heatmap.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/views/partials/heatmap.html">
+          <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/reporting/app.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="6" selection-start="144" selection-end="144" vertical-scroll-proportion="0.093361">
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HeatMap.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scripts/services/HeatMap.coffee">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="50" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tracking/server/app.coffee">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="4" selection-start="171" selection-end="171" vertical-scroll-proportion="-3.6">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tracking/client/app.coffee">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0">
+                <state line="7" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.21829522">
                   <folding />
                 </state>
               </provider>
@@ -219,22 +198,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/app.coffee" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/app/server/app.coffee" />
-        <option value="$PROJECT_DIR$/.tmp/tracking/server/app.js" />
-        <option value="$PROJECT_DIR$/node_modules/grunt-develop/tasks/develop.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/HeatMap.coffee" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/tracking/client/app.coffee" />
-        <option value="$PROJECT_DIR$/reporting/app.coffee" />
-        <option value="$PROJECT_DIR$/tracking/server/app.coffee" />
         <option value="$PROJECT_DIR$/app/scripts/services/WebSocketsService.coffee" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.coffee" />
         <option value="$PROJECT_DIR$/app/dummy.html" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/partials/heatmap.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/reporting/app.coffee" />
+        <option value="$PROJECT_DIR$/tracking/server/app.coffee" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/.tmp/server/app.js" />
+        <option value="$PROJECT_DIR$/server/app.coffee" />
+        <option value="$PROJECT_DIR$/server/reporting/app.coffee" />
+        <option value="$PROJECT_DIR$/server/tracking/app.coffee" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -299,57 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tracking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,11 +314,11 @@
       <recent name="$PROJECT_DIR$/app/scripts/controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/tracking" />
+      <recent name="$PROJECT_DIR$/app/scripts" />
       <recent name="$PROJECT_DIR$/app/scripts/vendor" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app/scripts" />
-      <recent name="$PROJECT_DIR$/tracking" />
-      <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
   <component name="RunManager">
@@ -522,17 +451,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.tmp/reporting/app.js">
+    <entry file="file://$PROJECT_DIR$/app/components/socket.io-client/lib/socket.io-client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.22950819" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/grunt-develop/tasks/develop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="5" selection-start="742" selection-end="742" vertical-scroll-proportion="0.029296875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/vendor/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/app/components/socket.io-client/dist/socket.io.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
@@ -541,79 +467,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.tmp/tracking/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.18481013">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/client/app.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="36" selection-start="6246" selection-end="6246" vertical-scroll-proportion="6.7773438">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="893" selection-end="893" vertical-scroll-proportion="-12.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/WebSocketsService.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="-1.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="-8.4">
+        <state line="14" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="0.4312115">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/HeatMap.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="50" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
+        <state line="2" column="50" selection-start="64" selection-end="64" vertical-scroll-proportion="0.062370062">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tracking/server/app.coffee">
+    <entry file="file://$PROJECT_DIR$/app/scripts/tracking.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="171" selection-end="171" vertical-scroll-proportion="-3.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/app.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="15" selection-start="426" selection-end="426" vertical-scroll-proportion="-12.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dummy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="31" selection-start="2453" selection-end="2453" vertical-scroll-proportion="-45.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="1291" selection-end="1291" vertical-scroll-proportion="-11.875">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
@@ -627,9 +497,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="130" selection-end="183" vertical-scroll-proportion="0.2777778">
+        <state line="27" column="41" selection-start="1306" selection-end="1306" vertical-scroll-proportion="-16.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="893" selection-end="893" vertical-scroll-proportion="-16.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.tmp/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.19924098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/WebSocketsService.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="-1.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="139" selection-end="139" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="287" column="21" selection-start="6843" selection-end="6843" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/reporting/app.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.21829522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tracking/app.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="63" selection-start="512" selection-end="512" vertical-scroll-proportion="-12.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="26" selection-end="26" vertical-scroll-proportion="0.030737706">
           <folding />
         </state>
       </provider>

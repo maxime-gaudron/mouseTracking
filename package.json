@@ -1,5 +1,5 @@
 {
-  "name": "skeleton",
+  "name": "mouseTracking",
   "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
@@ -26,7 +26,6 @@
     "matchdep": "~0.1.1",
     "grunt-google-cdn": "~0.1.1",
     "grunt-ngmin": "~0.0.2",
-    "express": "~3.2.1",
     "socket.io": "~0.9.14",
     "mongojs": "~0.7.5"
   },
