@@ -1,43 +1,29 @@
-exports.start = () ->
+exports.start = (port) ->
+  process.chdir(__dirname)
   console.log "starting reporting server"
 
-  next = require 'nextflow'
+  #Init db
+  mongoose = require 'mongoose'
+  mongoose.connect 'mongodb://127.0.0.1/tracking'
+  db = mongoose.connection
+  db.on 'error', (err) -> console.error.bind(console, 'connection error:')
+
+  #init models
+  fs = require 'fs'
+  models = fs.readdirSync('./models');
+  for key in models
+    require './models/' + models
+
+  # init socket.io
   socketio = require 'socket.io'
-  io = socketio.listen 9012
+  io = socketio.listen port
   io.set 'log level', 2
+  io.set 'browser client', false
 
-  mongodb = require "mongodb"
-  server = new mongodb.Server "127.0.0.1", 27017
-  db = new mongodb.Db "tracking", server, {w: 1}
-
-  next flow =
-    1: ->
-      self = this
-      db.open (err, database) ->
-        self.next(database)
-
-    2: (database) ->
-      self = this
-      database.collection 'mouseTracking', (err, collection) ->
-        console.log "Unable to access database: #{err}" if err
-        self.next(collection)
-
-    3: (collection) ->
-      io.sockets.on 'connection', (socket) ->
-        socket.on 'generateHeatMapData', (data) ->
-          console.log 'heatmap generation'
-
-          map = () ->
-            x = Math.round(parseInt(this.x) / 10) * 10
-            y = Math.round(parseInt(this.y) / 10) * 10
-            if x > 0 and y > 0
-              emit x + ':' + y, {x: x, y:y, weight: 1}
-
-          reduce = (key, docs) ->
-            coordinates = key.split(':')
-            return {x: coordinates[0], y:coordinates[1], weight: docs.length}
-
-          collection.mapReduce map, reduce, {out : {inline: 1}, verbose:true}, (err, results, stats) ->
-            if !err
-              socket.emit 'heatMapDataGenerated', results
-              console.log 'heatmap generated'
+  io.sockets.on 'connection', (socket) ->
+    socket.on 'generateHeatMapData', (data) ->
+      console.log 'heatmap generation'
+      mongoose.model('mouseTracking').generate data, (err, data) ->
+        if !err
+          socket.emit 'heatMapDataGenerated', data
+          console.log 'heatmap generated'

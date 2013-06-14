@@ -31,6 +31,4 @@ mouseTracking.controller 'HeatMapCtrl', ['$scope', 'socket', ($scope, socket) ->
   $scope.showHeatMap = (data) ->
     console.log 'generate heatmap'
     socket.emit 'generateHeatMapData', data
-
-  setInterval($scope.showHeatMap, 1000);
 ]

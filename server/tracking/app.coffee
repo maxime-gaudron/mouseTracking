@@ -1,10 +1,11 @@
-exports.start = () ->
+exports.start = (port) ->
   console.log "starting tracking server"
 
   next = require 'nextflow'
   socketio = require 'socket.io'
-  io = socketio.listen 9011
+  io = socketio.listen port
   io.set 'log level', 2
+  io.set 'browser client', false
 
   mongodb = require "mongodb"
   server = new mongodb.Server "127.0.0.1", 27017
