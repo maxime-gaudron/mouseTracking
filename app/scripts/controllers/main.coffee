@@ -9,17 +9,20 @@ mouseTracking.controller 'MainCtrl', ['$scope', ($scope) ->
 mouseTracking.controller 'HeatMapCtrl', ['$scope', 'socket', ($scope, socket) ->
   $scope.data = {
     url: "http://localhost:9010/#/",
-    targetWidth: 900
+    targetWidth: 1024
   }
 
   $scope.availableUrls = {};
   socket.emit 'getAvailableUrls'
 
-  $scope.heatmap = window.heatmapFactory.create {radius: 10, element: "heatmap",legend: {position: 'br',title: 'Scale'}}
+  $scope.heatmap = window.heatmapFactory.create {radius: 10, element: "heatmap"}
 
   socket.on 'getAvailableUrls', (data) ->
-    console.log data
+    console.log 'available URLS: ', data
     $scope.availableUrls = data
+    if data.length > 0
+      $scope.data.url = data[0]
+      $scope.showHeatMap $scope.data
 
   socket.on 'heatMapDataGenerated', (data) ->
     maxValue = 0

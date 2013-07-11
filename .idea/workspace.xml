@@ -2,34 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6b6106e-142d-42c0-9206-bc5686a49da4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/reporting/app.coffee" afterPath="$PROJECT_DIR$/server/reporting/app.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dummy2.html" afterPath="$PROJECT_DIR$/app/dummy2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/reporting/models/heatmap.coffee" afterPath="$PROJECT_DIR$/server/reporting/models/heatmap.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/heatmap.html" afterPath="$PROJECT_DIR$/app/views/partials/heatmap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.coffee" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/tracking.coffee" afterPath="$PROJECT_DIR$/app/scripts/tracking.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
     </list>
     <ignored path="skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371202996929" ignored="false" />
+    <file path="/index.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373537520535" ignored="false" />
     <file path="/a.dummy" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371031869923" ignored="false" />
     <file path="$PROJECT_DIR$/../SGFD/Margherita_2013-04-15/frontend/public/themes/margherita/js/module/Query.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1367574209137" ignored="false" />
     <file path="/Query.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1367573667572" ignored="false" />
-    <file path="/Dummy.txt" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373472762539" ignored="false" />
-    <file path="/app.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373473513071" ignored="false" />
+    <file path="/Dummy.txt" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373537866174" ignored="false" />
+    <file path="/app.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373532920353" ignored="false" />
     <file path="/Gruntfile.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371227212600" ignored="false" />
     <file path="/package.json" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1370534040395" ignored="false" />
     <file path="/WebSocketsService.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371113490344" ignored="false" />
-    <file path="/main.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373532249799" ignored="false" />
+    <file path="/main.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373534941086" ignored="false" />
     <file path="/tracking.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1370525436281" ignored="false" />
     <file path="/dummy.txt" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371129007616" ignored="false" />
     <file path="/tracking.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373445712428" ignored="false" />
     <file path="/component.json" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1370531089124" ignored="false" />
-    <file path="/heatmap.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373474044254" ignored="false" />
-    <file path="/main.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373473437186" ignored="false" />
+    <file path="/heatmap.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373537461466" ignored="false" />
+    <file path="/main.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373534181945" ignored="false" />
     <file path="/develop.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1370620758013" ignored="false" />
     <file path="/dummy.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371210666187" ignored="false" />
     <file path="/HeatMap.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373473076957" ignored="false" />
@@ -75,9 +73,9 @@
     <file path="$PROJECT_DIR$/../SGFD/margherita_2013-06-04/frontend/protected/components/Controller.php" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371112358874" ignored="false" />
     <file path="$PROJECT_DIR$/../SGFD/margherita_2013-06-04/frontend/protected/controllers/PostcodeController.php" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371112358874" ignored="false" />
     <file path="$PROJECT_DIR$/../SGFD/margherita_2013-06-04/frontend/public/themes/woody/js/application/order/createOrder.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371112358874" ignored="false" />
-    <file path="/main.scss" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371140190148" ignored="false" />
+    <file path="/main.scss" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373537602602" ignored="false" />
     <file path="/app.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371203664387" ignored="false" />
-    <file path="/heatmap.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373476408961" ignored="false" />
+    <file path="/heatmap.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373537173357" ignored="false" />
     <file path="/db.coffee" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1371218568943" ignored="false" />
     <file path="/dummy2.html" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373450896424" ignored="false" />
     <file path="$PROJECT_DIR$/../SGFD/SGFD-6775/frontend/public/themes/margherita/js/module/Checkout.js" changelist="c6b6106e-142d-42c0-9206-bc5686a49da4" time="1373472749682" ignored="false" />
@@ -104,7 +102,7 @@
       <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/reporting/app.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="54" selection-start="977" selection-end="993" vertical-scroll-proportion="-6.5384617">
+            <state line="36" column="50" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-6.923077">
               <folding />
             </state>
           </provider>
@@ -113,7 +111,7 @@
       <file leaf-file-name="heatmap.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/reporting/models/heatmap.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="-1.2">
+            <state line="17" column="20" selection-start="479" selection-end="479" vertical-scroll-proportion="-10.2">
               <folding />
             </state>
           </provider>
@@ -122,16 +120,16 @@
       <file leaf-file-name="main.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="-3.0">
+            <state line="6" column="3" selection-start="153" selection-end="153" vertical-scroll-proportion="-3.6">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="34" selection-end="34" vertical-scroll-proportion="0.01891551">
+            <state line="7" column="14" selection-start="95" selection-end="95" vertical-scroll-proportion="0.13257575">
               <folding />
             </state>
           </provider>
@@ -140,12 +138,26 @@
       <file leaf-file-name="heatmap.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/partials/heatmap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="-5.0">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="6" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="20" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-13.75">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.tmp/server/app.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/dummy.html" />
         <option value="$PROJECT_DIR$/server/tracking/app.coffee" />
         <option value="$PROJECT_DIR$/server/app.coffee" />
@@ -180,10 +190,12 @@
         <option value="$PROJECT_DIR$/app/dummy2.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/HeatMap.coffee" />
         <option value="$PROJECT_DIR$/server/reporting/app.coffee" />
-        <option value="$PROJECT_DIR$/app/views/partials/heatmap.html" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/server/reporting/models/heatmap.coffee" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.coffee" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/heatmap.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
       </list>
     </option>
   </component>
@@ -359,6 +371,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -426,24 +456,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -617,16 +629,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/dummy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="660" selection-end="660" vertical-scroll-proportion="0.4979253" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/styles/051c0509.main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="71" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/scripts/b51b35aa.scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -686,41 +688,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/heatmap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="-5.0">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/reporting/app.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="54" selection-start="977" selection-end="993" vertical-scroll-proportion="-6.5384617">
+        <state line="36" column="50" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-6.923077">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/reporting/models/heatmap.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="-1.2">
+        <state line="17" column="20" selection-start="479" selection-end="479" vertical-scroll-proportion="-10.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="-3.0">
+        <state line="6" column="3" selection-start="153" selection-end="153" vertical-scroll-proportion="-3.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/heatmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="34" selection-end="34" vertical-scroll-proportion="0.01891551">
+        <state line="5" column="6" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="20" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="95" selection-end="95" vertical-scroll-proportion="0.13257575">
           <folding />
         </state>
       </provider>

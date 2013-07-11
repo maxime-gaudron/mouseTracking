@@ -15,6 +15,7 @@ mouseTracking.statics.generate = (data, callback) ->
     else
       offsetLeft = 0
 
+    print offsetLeft
     x = Math.round(parseInt(offsetLeft + this.x) / 10) * 10
     y = Math.round(parseInt(this.y) / 10) * 10
     if x > 0 and y > 0
@@ -37,9 +38,12 @@ mouseTracking.statics.getAvailableUrls = (data, callback) ->
     if err
       console.log err
 
-      results.map
+    data = results.map (element) ->
+      return element._id
 
-    callback err, results
+    console.log data
+
+    callback err, data
 
 
 mongoose.model 'mouseTracking', mouseTracking

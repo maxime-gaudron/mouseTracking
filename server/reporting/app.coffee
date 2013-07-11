@@ -34,4 +34,4 @@ exports.start = (port) ->
       console.log 'get URLS'
       mongoose.model('mouseTracking').getAvailableUrls data, (err, data) ->
           if !err
-              socket.emit 'getAvailableUrls'
+              socket.emit 'getAvailableUrls', data

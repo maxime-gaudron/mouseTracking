@@ -1,22 +1,59 @@
 @import "compass_twitter_bootstrap";
 
-.heatmap  {
-    position:absolute;
-    width: 100%;
-    height: 80%;
-    min-height: 80%;
-}
-
-.container {
-  position: relative;
+.root {
   height: 100%;
 }
 
-#iframe {
-  border: 1px solid green;
+.heatmap-view {
+  height: 100%;
+  padding-top:10px;
+
+  .heatmap-wrapper {
+    height: 80%;
+    min-height: 80%;
+  }
+
+  .heatmap  {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width: 1024px;
+    height: 80%;
+    min-height: 80%;
+
+    canvas {
+      border: 1px solid red;
+      max-height: 100%;
+      max-width: 100% !important;
+    }
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+  }
+
+  #iframe {
+    width: 1024px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid green;
+  }
+
 }
 
 html, body {
     min-height: 100%;
     height: 100%;
+}
+
+// utility classes
+
+.text-center {
+  text-align: center;
 }
