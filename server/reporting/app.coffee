@@ -23,7 +23,15 @@ exports.start = (port) ->
   io.sockets.on 'connection', (socket) ->
     socket.on 'generateHeatMapData', (data) ->
       console.log 'heatmap generation'
+
       mongoose.model('mouseTracking').generate data, (err, data) ->
         if !err
           socket.emit 'heatMapDataGenerated', data
           console.log 'heatmap generated'
+
+
+    socket.on 'getAvailableUrls', (data) ->
+      console.log 'get URLS'
+      mongoose.model('mouseTracking').getAvailableUrls data, (err, data) ->
+          if !err
+              socket.emit 'getAvailableUrls'

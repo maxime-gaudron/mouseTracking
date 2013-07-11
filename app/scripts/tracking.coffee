@@ -8,13 +8,20 @@ id = monster.get "tracking-session"
 # on mousemove -> update the data
 window.onmousemove = (event) ->
   event = event || window.event; # IE-ism
+  w = window
+  d = document
+  e = d.documentElement
+  g = d.getElementsByTagName('body')[0]
+
   mousePos = {
     id: id,
     ms: event.timeStamp,
     type: 'mouseMovement',
     url: document.URL,
     x: event.layerX,
-    y: event.layerY
+    y: event.layerY,
+    windowX: w.innerWidth || e.clientWidth || g.clientWidth,
+    windowY: w.innerHeight|| e.clientHeight|| g.clientHeight
   }
 
 # Send the data to the server

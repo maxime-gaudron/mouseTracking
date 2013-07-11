@@ -1,7 +1,8 @@
 <div style="text-align: center">
     Url: <input type="text" ng-model="data.url"/>
+    Centered design: <input type="checkbox" ng-model="data.centeredDesign">
     <button ng-click="showHeatMap(data)">Show</button>
 </div>
-    <iframe id="iframe" class="heatmap" src="http://localhost:9010/dummy.html"></iframe>
-    <div class="heatmap" id="heatmap"></div>
+    <iframe id="iframe" class="heatmap" style="width:{{data.targetWidth}}px;" src="{{urlIframe}}"></iframe>
+    <div class="heatmap" style="width:{{data.targetWidth}}px;" id="heatmap"></div>
 

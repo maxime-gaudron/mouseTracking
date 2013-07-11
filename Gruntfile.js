@@ -303,8 +303,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'jshint',
-    'test',
+    //'jshint', // we are using coffeescript ...
+    //'test', // needs to be implemented
     'coffee',
     'compass:dist',
     'useminPrepare',
