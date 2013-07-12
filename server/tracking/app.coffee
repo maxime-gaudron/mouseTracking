@@ -25,7 +25,7 @@ exports.start = (port) ->
 
     3: (collection) ->
       io.sockets.on 'connection', (socket) ->
-        socket.on 'mouseMovement', (data) ->
+        socket.on 'mouseEvent', (data) ->
           if data
               data.ip = socket.handshake.address.address
               console.log "data !" + data.ms

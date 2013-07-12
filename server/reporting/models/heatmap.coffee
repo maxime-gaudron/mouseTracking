@@ -25,7 +25,12 @@ mouseTracking.statics.generate = (data, callback) ->
     coordinates = key.split(':')
     return {x: coordinates[0], y:coordinates[1], weight: docs.length}
 
-  o.query = {url: data.url}
+
+
+  o.query = {
+    url: data.url,
+    type: if data.type then 'mouseClick' else 'mouseMovement'
+  }
 
   this.mapReduce o, (err, results) ->
     if err
