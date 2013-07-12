@@ -9,7 +9,8 @@ mouseTracking.controller 'MainCtrl', ['$scope', ($scope) ->
 mouseTracking.controller 'HeatMapCtrl', ['$scope', 'socket', ($scope, socket) ->
   $scope.data = {
     url: "http://localhost:9010/#/",
-    targetWidth: 1024
+    targetWidth: 1024,
+    type: false
   }
 
   $scope.availableUrls = {};

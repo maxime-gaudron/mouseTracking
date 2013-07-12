@@ -1,9 +1,8 @@
 <div class="hero-unit heatmap-view text-center">
     <form class="form-inline">
         <select class="input-xlarge" ng-model="data.url" ng-options="url for url in availableUrls" ng-change="showHeatMap(data)"/>
-        <label class="checkbox">
-            <input type="checkbox" ng-model="data.centeredDesign" ng-change="showHeatMap(data)"> Centered design
-        </label>
+        <input type="checkbox" ng-model="data.type" ng-change="showHeatMap(data)"><label class="checkbox"> Click heatmap</label>
+        <input type="checkbox" ng-model="data.centeredDesign" ng-change="showHeatMap(data)"><label class="checkbox"> Centered design</label>
         <button class="btn" ng-click="showHeatMap(data)">Show</button>
     </form>
 

@@ -24,11 +24,33 @@ window.onmousemove = (event) ->
     windowY: w.innerHeight|| e.clientHeight|| g.clientHeight
   }
 
+window.onclick = (event) ->
+  event = event || window.event; # IE-ism
+  w = window
+  d = document
+  e = d.documentElement
+  g = d.getElementsByTagName('body')[0]
+
+  mouseClickPos = {
+    id: id,
+    ms: event.timeStamp,
+    type: 'mouseClick',
+    url: document.URL,
+    x: event.layerX,
+    y: event.layerY,
+    windowX: w.innerWidth || e.clientWidth || g.clientWidth,
+    windowY: w.innerHeight|| e.clientHeight|| g.clientHeight
+  }
+
+  #send click event to the server
+  socket.emit 'mouseEvent', mouseClickPos
+
+
 # Send the data to the server
 sendMousePosition = () ->
   pos = mousePos
   if previousMousePos and previousMousePos.ms isnt pos.ms
-    socket.emit 'mouseMovement', pos
+    socket.emit 'mouseEvent', pos
   previousMousePos = pos
 
 
