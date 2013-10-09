@@ -1,9 +1,8 @@
-socket = io.connect 'http://10.20.82.179:9011'
+socket = io.connect 'http://127.0.0.1:9011'
 mousePos = undefined
 previousMousePos = undefined
-
-#get the ID or undefined
 id = monster.get "tracking-session"
+pageId = ''
 
 # on mousemove -> update the data
 window.onmousemove = (event) ->
@@ -15,6 +14,7 @@ window.onmousemove = (event) ->
 
   mousePos = {
     id: id,
+    pageId: pageId,
     ms: event.timeStamp,
     type: 'mouseMovement',
     url: document.URL,
@@ -33,6 +33,7 @@ window.onclick = (event) ->
 
   mouseClickPos = {
     id: id,
+    pageId: pageId,
     ms: event.timeStamp,
     type: 'mouseClick',
     url: document.URL,
@@ -53,18 +54,14 @@ sendMousePosition = () ->
     socket.emit 'mouseEvent', pos
   previousMousePos = pos
 
+# retrieve socketID
+socket.emit 'getId'
+socket.on 'newId', (newId) =>
+  pageId = newId
 
-
-# ask for new ID if needed
-if id is null
-  now = new Date
-  str = now.getTime() + '' + now.getUTCMilliseconds()
-  socket.emit 'getId',str
-  # On new ID, start sending data
-  socket.on 'newId', (newId) =>
-    id = newId
+  if id is null
     monster.set "tracking-session", newId
-    setInterval sendMousePosition, 100
-else
-  # If we have an ID, start data
+    id = newId;
+
+  # On new ID, start sending data
   setInterval sendMousePosition, 100

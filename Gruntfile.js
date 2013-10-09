@@ -127,7 +127,7 @@ module.exports = function (grunt) {
       server: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/../server',
+          cwd: 'server',
           src: '{,**/}*.coffee',
           dest: '.tmp/server',
           ext: '.js'

@@ -1,5 +1,5 @@
 window.mouseTracking.factory 'socket', ($rootScope) ->
-  socket = io.connect 'http://10.20.82.179:9012'
+  socket = io.connect 'http://127.0.0.1:9012'
   return {
     on: (eventName, callback) ->
       socket.on eventName, () ->

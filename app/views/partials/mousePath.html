@@ -1,0 +1,29 @@
+<div class="hero-unit heatmap-view text-center">
+    <button class="btn" ng-click="openVisitorSelectionModal()">Open me!</button>
+    <div modal="VisitorSelectionModal" close="closeVisitorSelectionModal()" options="opts">
+        <div class="modal-header">
+            <h3>Visitor selection!</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="visitor in visitors">
+                    <button ng-click="generatePathButtonClick(visitor._id)" class="btn btn-block">{{visitor.startTime | date:'short'}} - {{visitor._id}}</button>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-warning cancel" ng-click="closeVisitorSelectionModal()">Cancel</button>
+        </div>
+    </div>
+
+    <form class="form-inline">
+        <select class="input-xlarge" ng-model="data.url" ng-options="url for url in availableUrls" ng-change="changeUrl(data)"/>
+        <input type="checkbox" ng-model="data.centeredDesign" ng-change="showMousePath(data)"><label class="checkbox"> Centered design</label>
+        <button class="btn" ng-click="showMousePath(data)">Show</button>
+    </form>
+
+    <div class="heatmap-wrapper">
+        <iframe id="iframe" class="heatmap" src="{{urlIframe}}"></iframe>
+        <div class="heatmap" id="heatmap"></div>
+    </div>
+</div>

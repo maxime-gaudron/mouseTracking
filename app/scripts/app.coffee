@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('MouseTrackingApp', [])
+window.mouseTracking = angular.module('MouseTrackingApp', ['ui.bootstrap'])
   .config ['$routeProvider', ($routeProvider) ->
     $routeProvider
       .when '/',
@@ -9,6 +9,9 @@ angular.module('MouseTrackingApp', [])
       .when '/heatmap',
         templateUrl: 'views/partials/heatmap.html'
         controller: 'HeatMapCtrl'
+      .when '/mousePath',
+        templateUrl: 'views/partials/mousePath.html'
+        controller: 'MousePathCtrl'
       .otherwise
         redirectTo: '/'
   ]

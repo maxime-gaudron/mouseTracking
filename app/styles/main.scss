@@ -28,6 +28,10 @@
       max-height: 100%;
       max-width: 100% !important;
     }
+
+    .kineticjs-content canvas {
+      position:relative !important;
+    }
   }
 
   .container {

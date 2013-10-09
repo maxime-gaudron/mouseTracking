@@ -25,8 +25,6 @@ mouseTracking.statics.generate = (data, callback) ->
     coordinates = key.split(':')
     return {x: coordinates[0], y:coordinates[1], weight: docs.length}
 
-
-
   o.query = {
     url: data.url,
     type: if data.type then 'mouseClick' else 'mouseMovement'
@@ -46,9 +44,37 @@ mouseTracking.statics.getAvailableUrls = (data, callback) ->
     data = results.map (element) ->
       return element._id
 
-    console.log data
-
     callback err, data
+
+mouseTracking.statics.getVisitorsSessions = (data, callback) ->
+  query = [ {$match: { url: data.url }}, {
+    $group: {
+      _id: "$pageId",
+      startTime: {$min : "$ms"},
+      endTime: {$max : "$ms"}
+    }
+  }];
+
+  this.aggregate query, (err, results) ->
+    if err
+      console.log err
+
+    callback err, results
+
+mouseTracking.statics.getMousePath = (data, callback) ->
+  console.log data
+  query = [ { $match: { pageId: data.pageId }},
+    { $sort: { ms: 1 }}
+  ];
+
+  this.aggregate query, (err, results) ->
+    if err
+      console.log err
+
+    finalResults = results.map (element) ->
+      return {x: element.x, y: element.y};
+
+    callback err, finalResults
 
 
 mongoose.model 'mouseTracking', mouseTracking
